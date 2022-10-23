@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+
+    <link rel="stylesheet" href="./css/icon.css" />
+  </head>
+  <body>
+    <div class="container_main">
+      <section class="content_header">
+        <div class="container_header">
+          <div class="cont_titular">
+            <p>ПЭ LB-52U ГОСТ</p>
+          </div>
+          <div class="container_top-maps">
+            <div class="top_map">
+              <img src="./img/flash_24.png" />
+              <p>Хит продаж</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sect_middle">
+        <div class="case_main">
+          <div class="cont_use">
+            <div class="box price">
+              <div class="head_price head_box">
+                <img class="box-logo" src="./img/price.svg" alt="price" />
+                <p>Цена (без НДС)</p>
+              </div>
+              <input type="text" disabled />
+            </div>
+            <div class="box diametr">
+              <div class="head_diametr head_box">
+                <img
+                  class="box-logo"
+                  src="./img/mdi_diameter.svg"
+                  alt="price"
+                />
+                <p>Диаметр</p>
+              </div>
+              <div class="buttonGroop">
+                <div class="counterBut">
+                  <button class="but_diametr butt" data-action="but">
+                    2.5 мм
+                  </button>
+                </div>
+                <div class="counterBut">
+                  <button class="but_diametr butt" data-action="but">
+                    3 мм
+                  </button>
+                </div>
+                <div class="counterBut">
+                  <button class="but_diametr butt" data-action="but">
+                    4 мм
+                  </button>
+                </div>
+                <div class="counterBut">
+                  <button class="but_diametr butt" data-action="but">
+                    5 мм
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="box package">
+              <div class="head_packege head_box">
+                <img class="box-logo" src="./img/bx_bxs-box.svg" alt="price" />
+                <p>Упаковка</p>
+              </div>
+              <div class="buttonGroop">
+                <div class="counterBut">
+                  <button class="butt" id="bg" data-action="but">1 кг</button>
+                </div>
+                <div class="counterBut">
+                  <button class="butt" id="bg" data-action="but">1.5 кг</button>
+                </div>
+                <div class="counterBut">
+                  <button class="butt" id="bg" data-action="but">2.5 кг</button>
+                </div>
+                <div class="counterBut">
+                  <button class="butt" id="bg" data-action="but">5 кг</button>
+                </div>
+              </div>
+            </div>
+            <div class="box_right">
+              <img class="box-logo" src="./img/rightBox.svg" alt="price" />
+              <p>Тип электродов Э50А</p>
+            </div>
+          </div>
+          <div class="img_main">
+            <img src="./img/img.svg" alt="" />
+          </div>
+        </div>
+        <a href="#popup">
+          <button class="button_main">
+            <p>ОФОРМИТЬ ЗАЯВКУ</p>
+          </button>
+        </a>
+      </section>
+
+      <div id="popup" class="popup">
+        <a href="#" class="popup_area"></a>
+        <div class="popup_body">
+          <div class="popup_content">
+            <div class="popup_header">
+              <a href="#" class="popup_close">x</a>
+              <div class="pop_header_content">заявка на ПЭ LB-52U ГОСТ</div>
+            </div>
+            <div class="section_popup">
+              <div class="input_popup">
+                <input type="text" placeholder="   Имя" />
+                <input type="text" placeholder="   Телефон" />
+                <input type="email" placeholder="   Email" />
+                <button class="button_two">оформить</button>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js.js"></script>
+</html>
+
+<!-- onclick="submit()" -->

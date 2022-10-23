@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-Bold.eot");
+  src: local("TT Norms Bold"), local("TTNorms-Bold"),
+    url("TTNorms-Bold.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-Bold.woff2") format("woff2"),
+    url("TTNorms-Bold.woff") format("woff"),
+    url("TTNorms-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-Medium.eot");
+  src: local("TT Norms Medium"), local("TTNorms-Medium"),
+    url("TTNorms-Medium.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-Medium.woff2") format("woff2"),
+    url("TTNorms-Medium.woff") format("woff"),
+    url("TTNorms-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-Regular.eot");
+  src: local("TT Norms Regular"), local("TTNorms-Regular"),
+    url("TTNorms-Regular.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-Regular.woff2") format("woff2"),
+    url("TTNorms-Regular.woff") format("woff"),
+    url("TTNorms-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ------------------------------------------------------------------- */
+
+.container_main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.content_header {
+  position: relative;
+  margin-top: 80px;
+}
+.container_header {
+  display: flex;
+  position: relative;
+  width: 380px;
+  height: 42px;
+  margin-left: 136px;
+}
+.cont_titular {
+  width: 236px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #1a1a18;
+}
+.container_top-maps {
+  width: 124px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  position: relative;
+  color: aliceblue;
+  margin-left: 20px;
+}
+.top_map {
+  display: flex;
+  margin: 0 auto;
+  background-color: #fec022;
+  width: 124px;
+  height: 28px;
+  border-radius: 4px;
+}
+.container_top-maps img {
+  width: 20px;
+  height: 20px;
+}
+.container_top-maps p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+/* --------------------------------------- */
+
+.sect_middle {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  margin-top: 30px;
+  background: url(../img/bg.png);
+  background-size: 100%;
+}
+.case_main {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.cont_use {
+  width: 100%;
+  height: 84px;
+  margin: 30px 0px 0 135px;
+  display: flex;
+}
+.head_box {
+  display: flex;
+  gap: 6px;
+}
+.box {
+  height: 100%;
+}
+.box-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.head_price {
+  width: 100%;
+}
+.diametr {
+  width: 270px;
+  margin-left: 30px;
+}
+.buttonGroop {
+  display: flex;
+  justify-content: space-around;
+}
+.but_diametr {
+}
+.butt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-family: "TT Norms";
+  font-style: normal;
+}
+.butt:hover {
+  cursor: pointer;
+  background-color: #fce8e9;
+  border: solid 1px;
+  border-color: #e31e25;
+  padding: 9px;
+}
+.package {
+  width: 239px;
+  margin-left: 30px;
+}
+
+/* ---------------right box-------------------- */
+.box_right {
+  margin-left: 61px;
+  display: flex;
+}
+
+.img_main {
+  position: absolute;
+  height: 300px;
+  left: 50%;
+  right: 9.03%;
+  margin-top: 90px;
+}
+.img_main img {
+  width: 650px;
+}
+
+.button_main {
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 10px;
+  width: 211px;
+  height: 60px;
+  margin-left: 135px;
+  margin-top: 40px;
+  background: #ffffff;
+  /* red */
+  color: #e31e25;
+  border: 2px solid #e31e25;
+  border-radius: 4px;
+}
+.button_main p {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.button_main:hover {
+  cursor: pointer;
+  background-color: #e31e25;
+  color: #ffffff;
+}
+.active {
+  background-color: #e31e25;
+  color: #ffffff;
+}
+
+/* _______________________popup______________ */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000be;
+  color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
+}
+.popup_area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup_content {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.popup_body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.popup_content {
+  position: relative;
+  width: 430px;
+  height: 440px;
+  background-color: #ffffff;
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+  transform: translate(0px, -100%);
+}
+.popup_header {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background-color: #f1f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pop_header_content {
+  text-transform: uppercase;
+  color: #1a1a18;
+}
+.popup_close {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  text-decoration: none;
+  color: #1a1a18;
+  font-size: 16px;
+}
+
+.popup_header {
+  width: 100%;
+  height: 90px;
+  background-color: #f1f2f2;
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.section_popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input_popup {
+}
+.input_popup input {
+  width: 370px;
+  height: 50px;
+  margin: 15px 30px 0px 30px;
+  background: #f1f2f2;
+
+  border: 1px solid #99a2ad;
+  border-radius: 4px;
+}
+.button_two{
+  position: relative;
+  
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 10px;
+  width: 211px;
+  height: 60px;
+  left: 30px;
+  top:20px;
+  background: #e31e25;
+  /* red */
+  color: #ffffff;
+  border: 2px solid #e31e25;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button_two:hover{
+  cursor: pointer;
+  background-color: #ffffff;
+  color:#e31e25;
+}
