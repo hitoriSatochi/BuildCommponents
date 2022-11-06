@@ -85,7 +85,6 @@ a:not([class]) {
 
 /* Упрощаем работу с изображениями */
 img {
-  max-width: 100%;
   display: block;
 }
 
@@ -148,7 +147,7 @@ img {
   width: 100%;
   margin-top: 30px;
   background: url(../img/bg.png);
-  background-size: 100%;
+  background-size: cover;
 }
 .case_main {
   position: relative;
@@ -161,6 +160,7 @@ img {
   height: 84px;
   margin: 30px 0px 0 135px;
   display: flex;
+  flex-wrap: wrap;
 }
 .head_box {
   display: flex;
@@ -225,9 +225,41 @@ img {
 .img_main img {
   width: 650px;
 }
+@media (max-width: 767px) {
+  .container-buttt {
+  }
+  .button_main {
+    top: 140px;
+  }
+  .sect_middle {
+    height: 383px;
+    background-size: auto 383px
+  }
+  .img_main img {
+    position: absolute;
+    width: 560px;
+    height: 220px;
+    left: 40%;
+    right: -24.61%;
+    top: 106px;
+    background-size: cover;
+  }
+  .package {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 320px) {
+  .container-buttt {
+   
+  }
+  .sect_middle {
+    height: 566px;
+    background-size: cover
+  }
+}
 
 .button_main {
-  position: absolute;
+  position: relative;
   flex-direction: row;
   align-items: center;
   padding: 20px 30px;
@@ -353,9 +385,9 @@ img {
   border: 1px solid #99a2ad;
   border-radius: 4px;
 }
-.button_two{
+.button_two {
   position: relative;
-  
+
   flex-direction: row;
   align-items: center;
   padding: 20px 30px;
@@ -363,7 +395,7 @@ img {
   width: 211px;
   height: 60px;
   left: 30px;
-  top:20px;
+  top: 20px;
   background: #e31e25;
   /* red */
   color: #ffffff;
@@ -372,8 +404,8 @@ img {
   text-transform: uppercase;
   cursor: pointer;
 }
-.button_two:hover{
+.button_two:hover {
   cursor: pointer;
   background-color: #ffffff;
-  color:#e31e25;
+  color: #e31e25;
 }
